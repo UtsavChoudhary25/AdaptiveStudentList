@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_rounded"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imgStudentProfile"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:contentDescription="@string/content_desc_student_avatar"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/ic_student_1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Utsav Choudhary" />
+
+            <TextView
+                android:id="@+id/tvStudentUsn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                tools:text="USN: 25MCAR0125" />
+
+            <TextView
+                android:id="@+id/tvStudentCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/primary_blue"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:text="Course: MCA" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

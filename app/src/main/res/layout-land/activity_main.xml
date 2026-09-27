@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_slate"
+    android:orientation="vertical">
+
+    <!-- App Header Banner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_student_directory"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/subtitle_directory"
+            android:textColor="#CBD5E1"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Content Split Layout for Landscape -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Left Pane: ListView -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginVertical="4dp"
+                android:text="@string/select_student_prompt"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+
+            <ListView
+                android:id="@+id/lvStudents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                tools:listitem="@layout/student_item" />
+        </LinearLayout>
+
+        <!-- Right Pane: Detail Card View -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_rounded"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_student_details"
+                android:textColor="@color/primary_blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="@color/border_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/imgDetailProfile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/content_desc_student_avatar"
+                    android:scaleType="fitCenter"
+                    tools:src="@drawable/ic_student_1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDetailName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:text="Utsav Choudhary" />
+
+                    <TextView
+                        android:id="@+id/tvDetailUsn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="16sp"
+                        tools:text="USN: 25MCAR0125" />
+
+                    <TextView
+                        android:id="@+id/tvDetailCourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/primary_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="Course: MCA" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

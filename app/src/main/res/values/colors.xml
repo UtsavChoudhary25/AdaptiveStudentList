@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_blue">#1E40AF</color>
+    <color name="primary_blue_dark">#1E3A8A</color>
+    <color name="accent_teal">#0D9488</color>
+    <color name="bg_slate">#F1F5F9</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="border_light">#E2E8F0</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Avatar colors -->
+    <color name="avatar_bg_1">#DBEAFE</color>
+    <color name="avatar_bg_2">#F3E8FF</color>
+    <color name="avatar_bg_3">#DCFCE7</color>
+    <color name="avatar_bg_4">#CCFBF1</color>
+    <color name="avatar_bg_5">#FEF3C7</color>
+</resources>
